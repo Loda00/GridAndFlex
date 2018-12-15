@@ -1,0 +1,267 @@
+.contenedor{
+    position: relative;
+    width: 100%;
+}
+/* .contenedorInterno{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height: 11px;
+    top: 110px;
+} */
+.paradax{
+    margin-left: 10%;
+    width: 80%;
+    height: 500px;
+    background-color: yellow;
+}
+/* R E G I S T R O */
+.registro{
+    position: fixed;
+    background-color: #222;
+    width: 400px;
+    height: 170px;
+    right: -370px;
+    top: 150px;
+    z-index: 99999;
+    padding-top: 10px;
+    transition: .5s;
+}
+.lbl{
+    position: relative;
+    display: block; 
+    margin-left: 75px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    /* height: 15px; */
+}
+.lbl input{
+    position: absolute;
+    right: 30px;
+    margin-right: 10px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    height: 20px;
+}
+[type="button"]{
+    display: block;
+    margin-left: 50%;
+    padding: 4px 20px;
+    border-radius: 4px;
+    margin-top: 2px;
+    border: none;
+    outline: none;
+    background-color: rgb(18, 77, 18);
+    color: white;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    transition: .3s;
+}
+[type="button"]:hover{
+    color: rgb(18, 77, 18);
+    background-color: white;
+    /* border: 3px solid rgb(18, 77, 18); */
+}
+.reg{
+    position: absolute;
+    font-size: 13px;
+    top: -4px;
+    /* padding-top: 2px;
+    padding-bottom: 2px; */
+    /* font-weight: bold; */
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgb(61, 61, 61);
+    cursor: pointer;
+    z-index: 1;
+    /* font-family: 'Oswald', sans-serif; */
+    height: 178px;
+}
+/* .reg2{
+    position: absolute;
+    font-size: 12.5px;
+    top: 0;
+    left: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: red;
+    cursor: pointer;
+    z-index: -5;
+} */
+    /*TITULO*/
+.tituloNewProduct{
+    text-align: center;
+    margin-top: 8%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.tituloNewProduct p{
+    letter-spacing: 4px;
+}
+    /*PRODUCTOS NUEVOS*/
+.productosNuevos{
+    margin-left: 10%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
+    grid-template-rows: repeat(2,300px);
+    /* margin-top: 50px; */
+}
+.item{
+    /* background-color: pink; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentImg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item img{
+    position: absolute;
+}
+.imgNone{
+    opacity: 0;
+    transition: opacity ease 1s ;
+}
+.imgView{
+    opacity: 1;
+    transition: opacity ease 1s ;
+}
+.contentImg:hover .imgNone{
+    opacity: 1;
+}
+.contentImg:hover .imgView{
+    opacity: 0;
+}
+.text{
+    position: absolute;
+    bottom: 1px;
+    text-align: center;
+}
+.text p{
+    margin-bottom: 8px;
+}
+/*boton para ir a la tienda*/
+.irTienda{
+    margin-top: 80px;
+    /* background-color: red; */
+}
+.irTienda div{
+    text-align: center;
+    border: 1px solid rgb(29, 29, 29);
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.irTienda a{
+    background-color: transparent;
+    color: gray;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    /* letter-spacing: 1px; */
+    font-size: 20px;  
+}
+
+.irTienda div:hover{
+    background-color: gray;
+    transition: .5s;  
+}
+.irTienda div:hover a{
+    color: white;
+}
+/*BLOQUE DE INSTRAGRAM*/
+.tituloInstagram{
+    margin-top: 15%;
+    margin-bottom: 8%;
+}
+.tituloInstagram div{
+    text-align: center;
+}
+.tituloInstagram div a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+.fotosInstagram{
+    margin-left: 10%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,160px);
+    grid-gap: 2px;
+}
+.itemImg{
+    background-color: pink;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.itemImg:hover{
+    filter: grayscale(80%);
+}
+.itemImg:nth-child(2){
+     /*     Inicio / Fin   Span = Tracks / numeros = lineas   */
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+}
+.itemImg:nth-child(3){
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 2;
+}
+
+/* R E S P O S I V E */
+
+@media screen and (max-width : 800px){
+    .paradax{
+        width: 100%;
+        margin-left: 0;
+    }
+    .productosNuevos{
+        margin-left: 10%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,300px);
+    }
+    .item:nth-child(7){
+        margin-left: 90%;
+    }
+    .item:nth-child(8){
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width : 600px){
+
+    .productosNuevos{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,300px);
+    }
+    .item:nth-child(7){
+        margin-left: 0;
+    }
+    .item:nth-child(8){
+        margin-left: 0;
+    }
+}

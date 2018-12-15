@@ -1,0 +1,63 @@
+.contenedor{
+    position: relative;
+    width: 100%;
+}
+.cuerpo{
+    width: 100%;
+    height: 500px;
+}
+.tituloShop{
+    margin-left: 10%;
+    width: 80%;
+
+}
+.tituloShop p{
+    padding-top: 140px;
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.tienda{
+    width: 80%;
+    margin-left: 10%;
+    background-color: rebeccapurple;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.itemTienda{
+    margin: 30px auto;
+}
+/* MENU CATEGORIAS */
+
+.categorias{
+    width: 80%;
+    height: 50px;
+    background-color: red;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+.categorias ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+}
+.categorias li{
+    width: 25%;
+    background-color: black;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    /* transition: opacity ease 1s ; */
+}
+.categorias a{
+    text-decoration: none;
+    color: white;
+}
+.categorias li:hover{
+    background-color: rebeccapurple;
+    transition: .5s;
+}
+
+
